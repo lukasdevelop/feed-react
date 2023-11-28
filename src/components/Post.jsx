@@ -14,9 +14,9 @@ export function Post() {
                 <time title='28 de Novembro as 18:21' dateTime='2023-11-28 18:21:11'>Published 1 hour ago</time>
             </header>
             <div className={styles.content}>
-                <p>Fala galeraa 👋</p>
+                <p>Hey guys 👋</p>
 
-                <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
+                <p>This is a comment on an example of a form I'm making for a portfolio of basic React functions 🚀</p>
 
                 <p><a href="#">jane.design/doctorcare</a></p>
 
@@ -26,6 +26,17 @@ export function Post() {
                     <a href='#'>#rocketseat</a>{' '}
                 </p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Your feedback</strong>
+
+                <textarea 
+                    placeholder='Make a comment'
+                />
+                <footer>
+                    <button type="submit">Publish</button>
+                </footer>
+            </form>
         </article>
     )
 }
