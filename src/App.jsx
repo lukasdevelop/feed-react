@@ -27,9 +27,9 @@ const posts = [
       role: 'CTO @SportsConnect'
     },
     content: [
-      { type: 'paragraph', content: 'Hey guys 👋'},
-      { type: 'paragraph', content: 'This is a comment on an example of a form Im making for a portfolio of basic React functions 🚀'},
-      { type: 'link', content: 'lucas.design/sportsconnect'}
+      { type: 'paragraph', content: 'Hey guy 👋'},
+      { type: 'paragraph', content: 'This is a comment on an example of a form Im making for a portfoli of basic React functions 🚀'},
+      { type: 'link', content: 'lucas.design/sportsconnec'}
     ],
     publishedAt: new Date('2023-11-05 18:46:00')
   },
@@ -49,7 +49,8 @@ function App() {
           {
             posts.map(post => {
               return (
-                <Post 
+                <Post
+                  key={post.id} 
                   author={post.author}
                   content={post.content}
                   publishedAt={post.publishedAt}
